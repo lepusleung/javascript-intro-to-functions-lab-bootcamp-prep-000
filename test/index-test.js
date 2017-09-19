@@ -1,44 +1,32 @@
-/*
-describe('shout(string)', function() {
-  it('receives one argument and returns it in all caps', function() {
-    expect(shout('hello')).toEqual('HELLO')
-  })
-})
 
-describe('whisper(string)', function() {
-  it('receives one argument and returns it in all lowercase', function() {
-    expect(whisper('HELLO')).toEqual('hello')
-  })
-})
+function shout(string) {
+  return string.toUpperCase()
+}
 
-describe('logShout(string)', function() {
-  it('calls console.log() its one argument in all caps', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
+function whisper(string) {
+  return string.toLowerCase()
+}
 
-    logShout('hello')
+function logShout(string) {
+  console.log(string.toUpperCase())
+}
 
-    expect(spy).toHaveBeenCalledWith('HELLO')
+function logWhisper(string) {
+  console.log(string.toLowerCase())
+}
 
-    console.log.restore()
-  })
-})
+function sayHiToGrandma(string) {
+  if (string === string.toLowerCase()) {
+    return 'I can\'t hear you!''
+  } else if 
+  (string === string.uppercase()) {
+    
+  }
+  )
+  }
+}
 
-describe('logWhisper(string)', function() {
-  it('calls console.log() its one argument in all lowercase', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
 
-    logWhisper('HELLO')
-
-    expect(spy).toHaveBeenCalledWith('hello')
-
-    console.log.restore()
-  })
-})
-
-describe('sayHiToGrandma(string)', function() {
-  it('returns "I can\'t hear you!" if `string` is lowercase', function() {
-    expect(sayHiToGrandma('hello')).toEqual("I can't hear you!")
-  })
 
   it('returns "YES INDEED!" if `string` is uppercase', function() {
     expect(sayHiToGrandma('HELLO')).toEqual("YES INDEED!")
